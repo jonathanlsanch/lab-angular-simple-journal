@@ -5,7 +5,7 @@ import { JournalService } from '../journal.service';
   selector: 'app-entry-list',
   templateUrl: './entry-list.component.html',
   styleUrls: ['./entry-list.component.css'],
-  // providers: [JournalService]
+  providers: [JournalService]
 })
 export class EntryListComponent implements OnInit {
   journals;

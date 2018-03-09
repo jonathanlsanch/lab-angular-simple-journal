@@ -1,3 +1,8 @@
-<p>
-  entry-list works!
-</p>
+<h2 class="text-info"> Journal List </h2>
+<div>
+  <div *ngFor="let journal of journals" class="card border-dark mb-3 center" style="max-width: 30rem;">
+    <h3> {{ journal.title }} </h3>
+    <p> {{ journal.content }} </p>
+    <a [routerLink]="['journal', journal._id]"> View Details </a>
+  </div>
+</div>

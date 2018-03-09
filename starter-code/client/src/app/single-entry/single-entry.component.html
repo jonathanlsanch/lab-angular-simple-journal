@@ -1,0 +1,11 @@
+<div class="card border-primary mb-3 center" style="max-width: 20rem;">
+<div *ngIf="journal">
+  <div class="journal-info">
+    <h2 class="card-title"> {{ journal.title }}</h2>
+    <p class="card-body"> {{ journal.date }} </p>
+    <p> {{ journal.content }} </p>
+    <a [routerLink]="['']"> Back to list </a>
+    </div>
+  </div>
+  </div>
+  <!-- <button (click)="deletePhone()" type="button" class="btn btn-danger"> Delete </button> -->
